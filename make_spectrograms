@@ -1,0 +1,21 @@
+# Импорты
+import librosa
+import librosa.display
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Загрузка аудио
+file = "stems\e2b96ece-9b61-4ef5-b7ca-81b7630c513e\\other.wav"
+y, sr = librosa.load(file, sr=None)
+
+# STFT
+S_stft = librosa.stft(y)
+S_db = librosa.amplitude_to_db(np.abs(S_stft), ref=np.max)
+
+# Построение спектрограммы
+plt.figure(figsize=(10, 6))
+librosa.display.specshow(S_db, sr=sr, x_axis='time', y_axis='hz')
+plt.colorbar(format='%+2.0f dB')
+plt.title(f'Спектрограмма файла: {file}')
+plt.tight_layout()
+plt.show()

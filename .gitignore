@@ -1,0 +1,17 @@
+# Окружение
+.venv/
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+
+# Исполняемое
+*.exe
+
+# Результаты
+songs/
+spect/
+stems/
+DEVNOTES.txt
