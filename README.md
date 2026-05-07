@@ -6,6 +6,14 @@ A prototype of an ML-pipeline for an audio separation service based on Demucs mo
 * Scripts for metrics calculations and building spectrograms of audio files;
 * Analysis of results and ideas for improving the Demucs. 
 
+## Evaluation
+|   Stem   | SIR (dB) | SAR (dB) | SDR (dB) |
+|:---------|:--------:|:--------:|:--------:|
+|  vocals  | 15 ± 4   | 11 ± 9   | 8  ± 2   |
+|  drums   | 14 ± 7   | 10 ± 12  | 6  ± 5   |
+|  bass    | 8  ± 15  | 20 ± 6   | 12 ± 3   |
+|  other   | 12 ± 6   | 3  ± 13  | 6  ± 3   |
+
 ## Stack
 ### Audio
 * torchaudio — models loading, working with demucs;
