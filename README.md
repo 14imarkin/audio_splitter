@@ -25,7 +25,7 @@ A prototype of an ML-pipeline for an audio separation service based on Demucs mo
 ### Backend
 After you have cloned the repository 
 ``` bash
-git clone 
+git clone "https://github.com/14imarkin/audio_splitter"
 pip install -r requirements.txt
 ```
 
