@@ -17,14 +17,14 @@ A prototype of an ML-pipeline for an audio separation service based on Demucs mo
 ## Stack
 ### Audio
 * torchaudio — models loading, working with demucs;
-* librosa — provides stft, working with wav, mp3;
-* museval — metrics SIR, SAR, SDR. 
+* librosa    — provides stft, working with wav, mp3;
+* museval    — metrics SIR, SAR, SDR. 
 ### Web
 * FastAPI — backend, documentation; 
-* uuid — unique sessions. 
+* uuid    — unique sessions. 
 ### ML
 * PyTorch — ML framework;
-* demucs — native working with demucs. 
+* demucs  — native working with demucs. 
 ### Data Analysis
 * numpy, pandas, matplotlib — basic DA-stack;
 * jupyter notebook — programming environment. 
